@@ -1,4 +1,7 @@
 # This file contains recursive sources that require this package
 R-TTR
+R-party
+R-partykit
 R-quantmod
+R-strucchange
 R-tseries
