@@ -1,7 +1,7 @@
 # This file contains recursive sources that require this package
+R-PerformanceAnalytics
 R-TTR
-R-party
-R-partykit
+R-dygraphs
 R-quantmod
-R-strucchange
-R-tseries
+R-shinystan
+R-timeSeries
