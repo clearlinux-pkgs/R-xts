@@ -4,14 +4,13 @@
 #
 Name     : R-xts
 Version  : 0.11.2
-Release  : 30
+Release  : 31
 URL      : https://cran.r-project.org/src/contrib/xts_0.11-2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/xts_0.11-2.tar.gz
 Summary  : eXtensible Time Series
 Group    : Development/Tools
 License  : GPL-2.0+
 Requires: R-xts-lib = %{version}-%{release}
-Requires: R-zoo
 BuildRequires : R-zoo
 BuildRequires : buildreq-R
 
@@ -37,10 +36,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1541477863
+export SOURCE_DATE_EPOCH=1552804878
 
 %install
-export SOURCE_DATE_EPOCH=1541477863
+export SOURCE_DATE_EPOCH=1552804878
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -76,8 +75,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library xts|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  xts || :
 
 
 %files
@@ -123,7 +121,7 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/xts/include/xts.h
 /usr/lib64/R/library/xts/include/xtsAPI.h
 /usr/lib64/R/library/xts/include/xts_stubs.c
-/usr/lib64/R/library/xts/libs/symbols.rds
+/usr/lib64/R/library/xts/tests/doRUnit.R
 /usr/lib64/R/library/xts/unitTests/Makefile
 /usr/lib64/R/library/xts/unitTests/runit.Ops.R
 /usr/lib64/R/library/xts/unitTests/runit.align.time.R
