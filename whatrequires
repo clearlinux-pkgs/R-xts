@@ -4,4 +4,5 @@ R-TTR
 R-dygraphs
 R-quantmod
 R-shinystan
+R-smoother
 R-timeSeries
