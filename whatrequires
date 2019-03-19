@@ -3,6 +3,7 @@ R-PerformanceAnalytics
 R-TTR
 R-dygraphs
 R-quantmod
+R-rstanarm
 R-shinystan
 R-smoother
 R-timeSeries
