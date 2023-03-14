@@ -4,7 +4,7 @@
 #
 Name     : R-xts
 Version  : 0.13.0
-Release  : 63
+Release  : 64
 URL      : https://cran.r-project.org/src/contrib/xts_0.13.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/xts_0.13.0.tar.gz
 Summary  : eXtensible Time Series
@@ -14,9 +14,6 @@ Requires: R-xts-lib = %{version}-%{release}
 Requires: R-zoo
 BuildRequires : R-zoo
 BuildRequires : buildreq-R
-# Suppress stripping binaries
-%define __strip /bin/true
-%define debug_package %{nil}
 
 %description
 This directory contains a skeleton example
@@ -41,10 +38,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1677001122
+export SOURCE_DATE_EPOCH=1678825290
 
 %install
-export SOURCE_DATE_EPOCH=1677001122
+export SOURCE_DATE_EPOCH=1678825290
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
