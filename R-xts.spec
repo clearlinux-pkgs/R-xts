@@ -5,7 +5,7 @@
 #
 Name     : R-xts
 Version  : 0.13.1
-Release  : 68
+Release  : 69
 URL      : https://cran.r-project.org/src/contrib/xts_0.13.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/xts_0.13.1.tar.gz
 Summary  : eXtensible Time Series
