@@ -1,5 +1,5 @@
 PKG_NAME := R-xts
-URL = https://cran.r-project.org/src/contrib/xts_0.14.0.tar.gz
+URL = https://ftp.osuosl.org/pub/cran/src/contrib/xts_0.14.1.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
